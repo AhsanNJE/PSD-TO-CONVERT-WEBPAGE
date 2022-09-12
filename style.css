@@ -1,0 +1,575 @@
+body {
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+/* This is header part ------*****************************************/
+p {
+  color: #515151;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.mcolor {
+  color: #fe320a;
+}
+.myp {
+  padding: 0% 10%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-end;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 3;
+  
+}
+nav .brand img {
+  padding: 10px;
+}
+
+header nav .menu ul {
+  display: flex;
+  width: 80%;
+  list-style: none;
+  left: 20%;
+}
+header nav .menu ul a {
+  text-decoration: none;
+  padding: 35px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+}
+
+.content-header {
+  height: 500px;
+  background-image: url(./images/head.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+.content-header p {
+  margin: 0% 15%;
+}
+.content-header::before {
+  content: "";
+  clear: both;
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+.content-header p {
+  color: white;
+}
+button {
+  border: none;
+  background: #fe320a;
+  padding: 10px 18px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 15px;
+  margin-top: 5%;
+}
+
+/* This is about us part *****************************************************/
+.header-text {
+  width: 25%;
+  margin: auto;
+  text-transform: uppercase;
+}
+.header-text h2 {
+  margin: 10px 0px;
+  text-align: center;
+  position: relative;
+}
+.header-text hr {
+  width: 50%;
+  height: 1px;
+  background: #fe320a;
+  border: none;
+}
+.header-text h2::before {
+  content: "";
+  clear: both;
+  display: block;
+
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #fe320a;
+  position: absolute;
+
+  left: 50%;
+  bottom: -55%;
+}
+.about-text {
+  display: flex;
+}
+.about-text .left {
+  width: 30%;
+  margin: 2%;
+  position: relative;
+}
+.about-text .left img {
+  width: 100%;
+}
+.about-text .right {
+  width: 70%;
+  margin: 2%;
+  margin-right: 20%;
+}
+.about-text .social {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.about-text .social ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.about-text .social ul a {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 7px;
+  margin: 5px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.about-text .social ul a:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* This is videos part *************************************************/
+
+.video-part {
+  position: relative;
+}
+.video-title {
+  height: 40vh;
+  background-image: url(./images/video.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+.video-title h3 {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  text-align: center;
+  color: white;
+}
+.video-title i {
+  position: absolute;
+  top: 40%;
+  left: 52%;
+}
+.video-title::after {
+  content: "";
+  clear: both;
+  display: block;
+
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: -1;
+}
+
+/* thid is Our Services part ******************************************/
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.row .row-services {
+  text-align: center;
+  margin: 2%;
+}
+.row .row-services i {
+  color: red;
+  font-size: 25px;
+}
+.row .row-services p {
+  text-align: left;
+}
+
+/* this is my skill part **************************************/
+
+.Skill {
+  background-color: #f3f3f3;
+}
+.container {
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
+.pro-out {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 15px;
+  margin: 0% 5%;
+  border-radius: 5px;
+  position: relative;
+  text-align: right;
+  color: white;
+  font-size: 15px;
+}
+.pro .pro-out .pro-in1,
+.pro .pro-out .pro-in2,
+.pro .pro-out .pro-in3 {
+  background-color: #fe320a;
+  height: 10px;
+  margin: 0% 1%;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+.pro .pro-out .pro-in1 {
+  width: 60%;
+}
+.pro .pro-out .pro-in2 {
+  width: 70%;
+}
+.pro .pro-out .pro-in3 {
+  width: 85%;
+}
+
+/* this is client part css0 *8****************************/
+
+.client {
+  background-image: url(./images/clent.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 40vh;
+
+  position: relative;
+  z-index: 2;
+}
+.client .client-1 {
+  text-align: center;
+  color: white;
+}
+.client .client-1 p {
+  color: white;
+  font-size: x-large;
+}
+.client .client-1 i {
+  font-size: 20px;
+}
+.client::after {
+  content: "";
+  clear: both;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* this is our portfolio part *************************************/
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  position: relative;
+  left: 35%;
+}
+.menu ul li {
+  padding: 0 10px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+.portfolio .row img {
+  width: 100%;
+}
+
+.portfolio .row img:hover + .over {
+  display: flex;
+  transition: 2sec;
+}
+.portfolio .row .col {
+  position: relative;
+  width: 31.33%;
+  margin: 1%;
+  cursor: pointer;
+}
+.portfolio .over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.portfolio .over:hover {
+  transition: 0.5s;
+}
+.portfolio .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .row .col {
+  margin: 1%;
+}
+
+/* this is  my team css *********************************/
+
+.team {
+  background-color: #e1e1e1;
+}
+.team .team-row {
+  display: flex;
+}
+.team .team-row .col {
+  width: 23%;
+  margin: 2%;
+  position: relative;
+}
+.team .team-row .col img {
+  width: 100%;
+  border-bottom: 5px solid red;
+}
+.team .team-row .col img:hover + .over {
+  display: block;
+}
+.team .team-row .col .over {
+  background-color: rgba(255, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: none;
+}
+.team .team-row .col .social {
+  color: white;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.team .team-row .col .social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0%;
+}
+.team .team-row .col .social ul li a {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px 6px;
+  margin: 6px;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+.team .team-row .col .social ul li a:hover {
+  background: white;
+  color: black;
+}
+
+/* this is shipon part ********************************************/
+.shipon {
+  position: relative;
+  height: 40vh;
+  background-image: url(./images/portfolio.png);
+  background-size: cover;
+}
+.shipon-text {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+}
+.shipon-text h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.shipon-text p {
+  color: white;
+}
+
+/* this is latest blog css ********************************************/
+
+.Latest-Blog {
+  background-color: #ffffff;
+}
+.row-blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.row-blog .col-blog {
+  padding: 40px;
+  margin-left: 30px;
+}
+.col-blog button {
+  background-color: black;
+}
+
+/* this is contack part css ***************************************/
+
+.contact {
+  background-image: url(./images/contact.png);
+  background-size: cover;
+  padding: 20px 50px;
+  position: relative;
+  z-index: 2;
+}
+.contact::after {
+  content: "";
+  clear: both;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.contact input {
+  width: 44%;
+  margin: 1% 2%;
+  display: inline-block;
+  padding: 5px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  color: white;
+}
+.contact input::placeholder {
+  color: white;
+}
+.contact textarea {
+  width: 93%;
+  margin: 1% 2%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  color: white;
+}
+.contact textarea::placeholder {
+  color: white;
+  padding-top: 3px;
+  padding-left: 2px;
+}
+.contact button {
+  background-color: #ff0000;
+  padding: 7px 12px;
+  margin: 1% 2%;
+  font-size: 100%;
+}
+.contact {
+  padding: 0% 10%;
+}
+
+/* this is footer part  */
+.footer {
+  background-color: #121111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 10vh;
+}
+
+.leftfooter {
+  width: 70%;
+  display: inline-block;
+}
+.leftfooter ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+  left: 0%;
+}
+.leftfooter ul li a {
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+.rightfooter {
+  text-align: right;
+}
+.rightfooter p {
+  color: #e1e1e1;
+}
